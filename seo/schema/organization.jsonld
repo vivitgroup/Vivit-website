@@ -1,0 +1,41 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Vivit Group",
+  "url": "https://www.vivit-group.com",
+  "areaServed": {"@type": "Country", "name": "Egypt"},
+  "location": {
+    "@type": "Place",
+    "name": "First 6th of October, Egypt",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 29.974203,
+      "longitude": 30.956344
+    }
+  },
+  "sameAs": [
+    "https://www.linkedin.com/company/vivit-mark/",
+    "https://www.instagram.com/vivit.marketing",
+    "https://www.facebook.com/share/1FTYjYYV3t/?mibextid=wwXIfr"
+  ],
+  "knowsAbout": [
+    "Marketing Strategy",
+    "ATL Marketing",
+    "BTL Marketing",
+    "Trade Marketing",
+    "Digital Marketing",
+    "Media Buying",
+    "Social Media Marketing",
+    "Branding",
+    "Media Production",
+    "Commercial Photography",
+    "Website Development",
+    "Web Applications",
+    "Mobile App Development",
+    "CRM Development",
+    "ERP Development",
+    "Custom Software Development",
+    "E-commerce Development",
+    "UI/UX Design"
+  ]
+}
