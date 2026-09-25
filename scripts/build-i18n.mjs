@@ -55,14 +55,15 @@ async function writeAssets(assets){
 }
 
 function removeOldI18n(html){
-  return html
+  html=html
     .replace(/<script src="\/i18n-data\.js"><\/script>\s*/g,'')
     .replace(/<script src="\/local-i18n\.js"><\/script>\s*/g,'')
     .replace(/<script src="\/i18n\/[^"]+"><\/script>\s*/g,'')
-    .replace(/<div id="google_translate_element"><\/div>/g,'')
-    .replace(/<script[^>]*>[\s\S]*?googleTranslateElementInit[\s\S]*?<\/script>\s*/gi,'')
-    .replace(/<script[^>]+src=["']https:\/\/translate\.google\.com\/[^"']+["'][^>]*><\/script>\s*/gi,'')
-    .replace(/<script[^>]*>[\s\S]*?googtrans[\s\S]*?<\/script>\s*/gi,'');
+    .replace(/<div id="google_translate_element"><\/div>/g,'');
+  html=html.replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi,function(tag){
+    return /googleTranslateElementInit|googtrans|translate\.google\.com\/translate_a\/element\.js/i.test(tag)?'':tag;
+  });
+  return html;
 }
 
 function collectArabicText(html){
