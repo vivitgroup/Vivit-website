@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://www.vivit-group.com/sitemap.xml
+
+# Do not block CSS, JS, images, or public service content.
+# Add disallow rules only for genuine private/admin/search/filter routes after code audit.
