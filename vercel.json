@@ -1,1 +1,30 @@
-{"buildCommand":"npm run build","outputDirectory":"public"}
+{
+  "buildCommand":"npm run build",
+  "outputDirectory":"public",
+  "headers":[
+    {
+      "source":"/",
+      "headers":[
+        {"key":"Cache-Control","value":"no-store, no-cache, must-revalidate, max-age=0"},
+        {"key":"Pragma","value":"no-cache"},
+        {"key":"Expires","value":"0"}
+      ]
+    },
+    {
+      "source":"/(ar|en|de|fr|zh|pl|sv|es|ru|pt)/",
+      "headers":[
+        {"key":"Cache-Control","value":"no-store, no-cache, must-revalidate, max-age=0"},
+        {"key":"Pragma","value":"no-cache"},
+        {"key":"Expires","value":"0"}
+      ]
+    },
+    {
+      "source":"/assets/(.*)",
+      "headers":[{"key":"Cache-Control","value":"public, max-age=31536000, immutable"}]
+    },
+    {
+      "source":"/local-i18n.js",
+      "headers":[{"key":"Cache-Control","value":"no-store, max-age=0"}]
+    }
+  ]
+}
