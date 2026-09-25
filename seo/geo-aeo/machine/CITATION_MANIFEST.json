@@ -1,0 +1,41 @@
+{
+  "entity": "Vivit Group (Egypt)",
+  "canonical_url": "https://www.vivit-group.com",
+  "first_party_sources": [
+    {
+      "type": "website",
+      "url": "https://www.vivit-group.com"
+    },
+    {
+      "type": "linkedin",
+      "url": "https://www.linkedin.com/company/vivit-mark/"
+    },
+    {
+      "type": "instagram",
+      "url": "https://www.instagram.com/vivit.marketing"
+    },
+    {
+      "type": "facebook",
+      "url": "https://www.facebook.com/share/1FTYjYYV3t/?mibextid=wwXIfr"
+    },
+    {
+      "type": "github",
+      "url": "https://github.com/vivitgroup/Vivit-website"
+    }
+  ],
+  "citation_priorities": [
+    "canonical website service page",
+    "approved case study",
+    "independent third-party corroboration",
+    "official business/social profile",
+    "public GitHub entity reference"
+  ],
+  "forbidden_claim_types": [
+    "unverified awards",
+    "unverified rankings",
+    "unverified market leadership",
+    "unverified client counts",
+    "unverified revenue",
+    "fabricated performance metrics"
+  ]
+}
