@@ -10,105 +10,116 @@
     if(!ext) return;
     img.dataset.loaded='1';
     img.decoding='async';
-    img.loading='lazy';
+    img.loading='eager';
     img.src='/assets/'+img.dataset.a+'.'+ext;
   }
   function loadImagesIn(root){
-    const imgs=[...root.querySelectorAll('img[data-a]')];
-    imgs.forEach(loadImage);
+    [...root.querySelectorAll('img[data-a]')].forEach(loadImage);
   }
-
   function fitSlide(sl){
     if(!sl || lang==='ar') return;
     const els=[...sl.querySelectorAll('p,h1,h2,h3,h4,div,span')];
     els.forEach(el=>{
       const text=(el.textContent||'').trim();
-      if(text.length<6 || el.children.length>2 || el.clientWidth<20 || el.clientHeight<10) return;
+      if(text.length<7 || el.children.length>2 || el.clientWidth<22 || el.clientHeight<10) return;
       let fs=parseFloat(getComputedStyle(el).fontSize);
       if(!fs || fs<11) return;
-      const min=Math.max(9,fs*0.70);
+      const min=Math.max(9,fs*0.66);
       let n=0;
-      while((el.scrollWidth>el.clientWidth+2 || el.scrollHeight>el.clientHeight+2) && fs>min && n++<8){
+      while((el.scrollWidth>el.clientWidth+2 || el.scrollHeight>el.clientHeight+2) && fs>min && n++<12){
         fs*=0.94;
         el.style.fontSize=fs+'px';
-        el.style.lineHeight='1.15';
+        el.style.lineHeight='1.12';
       }
     });
   }
 
-  // Mobile windowing: only keep the current slide and its two neighbours in the DOM.
-  // Every other wrapper remains as a same-height placeholder, preserving continuous 16:9 scrolling.
-  function initVirtualSlides(){
-    if(!mobile) return;
-    const wrappers=[...document.querySelectorAll('.sw')];
-    if(wrappers.length<10) return;
+  function initSingleSlideMobile(){
+    if(!mobile) return false;
+    const deck=document.querySelector('.deck');
+    const wrappers=[...document.querySelectorAll('.deck>.sw')];
+    if(!deck || wrappers.length!==46) return false;
 
-    const saved=wrappers.map((w,i)=>{
-      const h=w.getBoundingClientRect().height || (w.clientWidth*1080/1920);
-      w.dataset.vi=String(i);
-      w.style.height=h+'px';
-      return {html:w.innerHTML,height:h,live:true};
+    const slides=wrappers.map(w=>w.innerHTML);
+    const ct=document.querySelector('.ct');
+    const prog=document.querySelector('.prog i');
+    const hint=document.querySelector('.hint');
+    if(hint) hint.remove();
+
+    // Remove the full 46-slide DOM completely.
+    wrappers.forEach(w=>w.remove());
+
+    const host=document.createElement('div');
+    host.id='mobile-slide-host';
+    host.style.cssText='width:100%;margin:0;padding:0;overflow:hidden;position:relative;background:#141312;touch-action:pan-y;';
+    deck.appendChild(host);
+
+    let index=0;
+    function render(next,instant){
+      index=Math.max(0,Math.min(slides.length-1,next));
+      host.innerHTML='';
+      const w=document.createElement('div');
+      w.className='sw mobile-live-slide';
+      w.innerHTML=slides[index];
+      w.style.cssText='width:100%;aspect-ratio:16/9;height:auto;border-radius:0;box-shadow:none;background:#141312;overflow:hidden;position:relative;';
+      host.appendChild(w);
+      const sl=w.firstElementChild;
+      if(sl){
+        const sc=w.clientWidth/1920;
+        w.style.height=(1080*sc)+'px';
+        sl.style.left='0';sl.style.top='0';sl.style.translate='none';
+        sl.style.transformOrigin='0 0';
+        sl.style.transform='scale('+sc+')';
+        loadImagesIn(w);
+        requestAnimationFrame(()=>fitSlide(sl));
+      }
+      if(ct) ct.textContent=String(index+1).padStart(2,'0')+' / '+slides.length;
+      if(prog) prog.style.width=((index+1)/slides.length*100)+'%';
+      if(!instant) host.animate([{opacity:.82,transform:'translateY(8px)'},{opacity:1,transform:'translateY(0)'}],{duration:180,easing:'ease-out'});
+      scrollTo(0,0);
+    }
+
+    let sx=0,sy=0,active=false;
+    host.addEventListener('touchstart',e=>{
+      const t=e.touches&&e.touches[0]; if(!t)return;
+      sx=t.clientX;sy=t.clientY;active=true;
+    },{passive:true});
+    host.addEventListener('touchend',e=>{
+      if(!active)return;active=false;
+      const t=e.changedTouches&&e.changedTouches[0]; if(!t)return;
+      const dx=t.clientX-sx,dy=t.clientY-sy;
+      if(Math.max(Math.abs(dx),Math.abs(dy))<42)return;
+      if(Math.abs(dy)>=Math.abs(dx)) render(index+(dy<0?1:-1));
+      else render(index+(dx<0?1:-1));
+    },{passive:true});
+
+    document.addEventListener('keydown',e=>{
+      if(['ArrowDown','ArrowLeft','PageDown',' '].includes(e.key)){e.preventDefault();render(index+1)}
+      if(['ArrowUp','ArrowRight','PageUp'].includes(e.key)){e.preventDefault();render(index-1)}
     });
 
-    function scaleRestored(w){
-      const sl=w.querySelector('.slide');
-      if(!sl) return;
-      const sc=w.clientWidth/1920;
-      sl.style.left='0'; sl.style.top='0'; sl.style.translate='none';
-      sl.style.transformOrigin='0 0'; sl.style.transform='scale('+sc+')';
-      loadImagesIn(w);
-      requestAnimationFrame(()=>fitSlide(sl));
-    }
-    function hydrate(i){
-      const s=saved[i],w=wrappers[i];
-      if(!s||s.live) return;
-      w.innerHTML=s.html;
-      s.live=true;
-      scaleRestored(w);
-    }
-    function dehydrate(i){
-      const s=saved[i],w=wrappers[i];
-      if(!s||!s.live) return;
-      const rect=w.getBoundingClientRect();
-      if(Math.abs(rect.top)<innerHeight*2.2 || Math.abs(rect.bottom)<innerHeight*2.2) return;
-      w.innerHTML='<div aria-hidden="true" style="width:100%;height:100%;background:transparent"></div>';
-      s.live=false;
-    }
-    function currentIndex(){
-      const mid=innerHeight*0.45;
-      let best=0,dist=Infinity;
-      wrappers.forEach((w,i)=>{
-        const r=w.getBoundingClientRect();
-        const d=Math.abs((r.top+r.bottom)/2-mid);
-        if(d<dist){dist=d;best=i}
-      });
-      return best;
-    }
-    let ticking=false;
-    function update(){
-      ticking=false;
-      const c=currentIndex();
-      for(let i=Math.max(0,c-2);i<=Math.min(wrappers.length-1,c+2);i++) hydrate(i);
-      wrappers.forEach((w,i)=>{if(Math.abs(i-c)>2) dehydrate(i)});
-    }
-    wrappers.forEach((w,i)=>{ if(i>2) dehydrate(i); else scaleRestored(w); });
-    addEventListener('scroll',()=>{if(!ticking){ticking=true;requestAnimationFrame(update)}},{passive:true});
-    addEventListener('resize',()=>{
-      wrappers.forEach((w,i)=>{
-        const h=w.clientWidth*1080/1920; saved[i].height=h; w.style.height=h+'px';
-        if(saved[i].live) scaleRestored(w);
-      });
-      update();
-    },{passive:true});
-    update();
+    // Tap left/right edges as an additional fallback.
+    host.addEventListener('click',e=>{
+      const x=e.clientX/innerWidth;
+      if(x<0.18) render(index-1);
+      else if(x>0.82) render(index+1);
+    });
+
+    addEventListener('resize',()=>render(index,true),{passive:true});
+    document.documentElement.style.overflow='hidden';
+    document.body.style.overflow='hidden';
+    deck.style.paddingBottom='0';
+    render(0,true);
+    return true;
   }
 
-  // Desktop / initial mobile image loading
-  const initial=[...document.querySelectorAll('img[data-a]')];
-  initial.slice(0,mobile?2:12).forEach(loadImage);
-  if(!mobile && 'IntersectionObserver' in window){
-    const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){loadImage(e.target);io.unobserve(e.target)}}),{rootMargin:'1000px 0px'});
-    initial.slice(12).forEach(i=>io.observe(i));
+  function desktopLazyImages(){
+    const imgs=[...document.querySelectorAll('img[data-a]')];
+    imgs.slice(0,12).forEach(loadImage);
+    if('IntersectionObserver' in window){
+      const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){loadImage(e.target);io.unobserve(e.target)}}),{rootMargin:'1000px 0px'});
+      imgs.slice(12).forEach(i=>io.observe(i));
+    }else imgs.forEach(loadImage);
   }
 
   function releasePageMemory(){
@@ -145,7 +156,6 @@
     return;
   }
 
-  if(document.fonts&&document.fonts.ready){
-    document.fonts.ready.then(()=>{initVirtualSlides(); if(!mobile) document.querySelectorAll('.slide').forEach(fitSlide)});
-  }else initVirtualSlides();
+  const start=()=>{if(!initSingleSlideMobile()){desktopLazyImages();document.querySelectorAll('.slide').forEach(fitSlide)}};
+  if(document.fonts&&document.fonts.ready) document.fonts.ready.then(start); else start();
 })();
