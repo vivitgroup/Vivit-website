@@ -36,6 +36,7 @@
 
   function initSingleSlideMobile(){
     if(!mobile) return false;
+    document.querySelectorAll('.topbar img[data-a], .topbar [data-a]').forEach(loadImage);
     const deck=document.querySelector('.deck');
     const wrappers=[...document.querySelectorAll('.deck>.sw')];
     if(!deck || wrappers.length!==46) return false;
@@ -65,6 +66,13 @@
       host.appendChild(w);
       const sl=w.firstElementChild;
       if(sl){
+        w.classList.add('seen');
+        sl.classList.add('seen');
+        sl.querySelectorAll('.a').forEach(el=>{
+          el.style.opacity='1';
+          el.style.animation='none';
+          el.style.transform=el.style.transform||'none';
+        });
         const sc=w.clientWidth/1920;
         w.style.height=(1080*sc)+'px';
         sl.style.left='0';sl.style.top='0';sl.style.translate='none';
@@ -109,6 +117,7 @@
     document.documentElement.style.overflow='hidden';
     document.body.style.overflow='hidden';
     deck.style.paddingBottom='0';
+    document.documentElement.classList.remove('anim');
     render(0,true);
     return true;
   }
