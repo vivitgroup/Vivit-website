@@ -1,6 +1,7 @@
 (function(){
   const LANGS={ar:'/',en:'/en/',de:'/de/',fr:'/fr/','zh-CN':'/zh/',pl:'/pl/',sv:'/sv/',es:'/es/',ru:'/ru/',pt:'/pt/'};
   const lang=window.__VIVIT_LANG__||'ar';
+  const VERSION='20260925-2218';
   const mobile=window.matchMedia&&window.matchMedia('(max-width:900px)').matches;
 
   function assetUrl(img){
@@ -114,7 +115,8 @@
   document.querySelectorAll('.langitem').forEach(x=>{
     x.onclick=function(e){
       e.preventDefault();e.stopPropagation();
-      const dest=LANGS[x.dataset.lang]||'/';
+      const base=LANGS[x.dataset.lang]||'/';
+      const dest=base+'?v='+VERSION;
       if(location.pathname!==dest){
         if(box) box.classList.remove('open');
         releasePageMemory();
@@ -128,7 +130,7 @@
 
   const q=new URLSearchParams(location.search).get('lang');
   if(q && LANGS[q]){
-    const dest=LANGS[q];
+    const dest=LANGS[q]+'?v='+VERSION;
     if(location.pathname!==dest){releasePageMemory();location.replace(dest)}
     else history.replaceState(null,'',dest);
     return;
