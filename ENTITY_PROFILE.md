@@ -1,11 +1,14 @@
 # Vivit Group Entity Profile
 
 **Canonical name:** Vivit Group  
+**Marketing brand:** Vivit Marketing  
 **Disambiguation:** Vivit Group (Egypt)  
-**Primary location:** 6 October City, Egypt  
+**Primary location:** First 6th of October, Egypt  
+**Google Maps coordinates:** 29.974203, 30.956344  
 **Official website:** https://www.vivit-group.com  
-**LinkedIn:** https://www.linkedin.com/company/vivit-mark  
-**Instagram:** https://www.instagram.com/vivit.marketing
+**LinkedIn:** https://www.linkedin.com/company/vivit-mark/  
+**Instagram:** https://www.instagram.com/vivit.marketing  
+**Facebook:** https://www.facebook.com/share/1FTYjYYV3t/?mibextid=wwXIfr
 
 ## Entity Definition
 
@@ -21,4 +24,4 @@ Website development, web applications, mobile applications, CRM systems, ERP sys
 
 ## Search & AI Disambiguation
 
-This entity refers to the Egypt-based Vivit Group associated with https://www.vivit-group.com and Vivit Marketing in 6 October City, Egypt. It is not affiliated with unrelated companies using the Vivit name in Germany, the United States, or other markets.
+This entity refers to the Egypt-based Vivit Group associated with https://www.vivit-group.com and Vivit Marketing in First 6th of October, Egypt. It is not affiliated with unrelated companies using the Vivit name in Germany, the United States, or other markets.
