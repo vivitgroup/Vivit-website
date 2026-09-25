@@ -105,6 +105,8 @@ async function translateBatch(tl,arr){
   return vals;
 }
 
+const COMMON_CLEANUP={'الـ':''};
+
 const OVERRIDES={
   en:{
     'ملايين الجنيهات':'Millions of EGP',
@@ -613,7 +615,7 @@ function translateHtml(html,dict){
     if(/^<(script|style)\b/i.test(part)) return part;
     return part.replace(/>([^<>]+)</g,(m,txt)=>{
       const t=txt.trim();
-      if(!t || !dict[t]) return m;
+      if(!t || !Object.prototype.hasOwnProperty.call(dict,t)) return m;
       const lead=(txt.match(/^\s*/)||[''])[0],tail=(txt.match(/\s*$/)||[''])[0];
       return '>'+lead+dict[t]+tail+'<';
     });
@@ -665,7 +667,7 @@ for(const tl of TARGETS){
     }
     bs[i].forEach((s,k)=>map[s]=vals[k]||s);
   }
-  Object.assign(map,GLOSSARY[tl]||{},OVERRIDES[tl]||{},SEGMENT_OVERRIDES[tl]||{},REVIEWED_COPY[tl]||{},FINAL_REVIEW[tl]||{},METRICS_REVIEW[tl]||{});
+  Object.assign(map,COMMON_CLEANUP,GLOSSARY[tl]||{},OVERRIDES[tl]||{},SEGMENT_OVERRIDES[tl]||{},REVIEWED_COPY[tl]||{},FINAL_REVIEW[tl]||{},METRICS_REVIEW[tl]||{});
   dictionaries[tl]=map;
 }
 
