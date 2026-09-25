@@ -58,7 +58,8 @@ function removeOldI18n(html){
   return html
     .replace(/<script src="\/i18n-data\.js"><\/script>\s*/g,'')
     .replace(/<script src="\/local-i18n\.js"><\/script>\s*/g,'')
-    .replace(/<script src="\/i18n\/[^"]+"><\/script>\s*/g,'');
+    .replace(/<script src="\/i18n\/[^"]+"><\/script>\s*/g,'')
+    .replace(/<div id="google_translate_element"><\/div>/g,'');
 }
 
 function collectArabicText(html){
@@ -193,7 +194,10 @@ function addLanguagesToMenu(html){
   if(html.includes('data-lang="ru"')) return html;
   const insert='<button class="langitem" data-lang="ru" data-flag="🇷🇺" data-name="Русский"><span>🇷🇺</span><span>Русский</span><span class="lc">RU</span></button>'
     +'<button class="langitem" data-lang="pt" data-flag="🇵🇹" data-name="Português"><span>🇵🇹</span><span>Português</span><span class="lc">PT</span></button>';
-  return html.replace(/(<\/div>\s*<\/div>\s*<div class="progress-wrap")/,insert+'$1');
+  const marker='</button></div></div><span class="ct">';
+  const pos=html.indexOf(marker);
+  if(pos<0) throw new Error('Language menu closing marker not found');
+  return html.slice(0,pos+'</button>'.length)+insert+html.slice(pos+'</button>'.length);
 }
 
 function setLangUI(html,key){
