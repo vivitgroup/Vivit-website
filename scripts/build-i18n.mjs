@@ -348,6 +348,94 @@ const SEGMENT_OVERRIDES={
   }
 };
 
+const REVIEWED_COPY={
+  en:{
+    'جنيه':'EGP','ليد':'lead','ليدز':'leads','عميل محتمل':'potential customer','عميل محتمل (ليد)':'potential customer (lead)',
+    'جنيه متوسط تكلفة الليد':'EGP average cost per lead','جنيه تكلفة الليد':'EGP cost per lead','جنيه صرف':'EGP spend',
+    'ملايين':'Millions','جنيه ميديا اتدارت على إيدينا':'of EGP in media managed by our team','عميل':'clients','في أكتر من':'across more than','مجال.':'sectors.',
+    'مشروع اتسلّم':'projects delivered','خدمة ماركتينج':'marketing services','سنين في السوق':'years in the market','سنين… متوسط بقاء العميل':'years — average client relationship','متابع على حسابنا إحنا':'followers on our own account'
+  },
+  de:{
+    'كل براند':'Jede Marke','عنده':'hat ihre','حكاية.':'Geschichte.','إحنا اللي بنوصّلها':'Wir bringen sie','للعالم.':'in die Welt.',
+    'مين':'Wer wir sind','بنعمل إيه':'Was wir tun','ماركتينج':'Marketing','+ تك هاوس':'+ Tech House','فين':'Wo','مصر والشرق الأوسط':'Ägypten & Naher Osten',
+    'القاعدة':'Die Regel','يعني إيه VIVIT أصلاً؟':'Was bedeutet VIVIT eigentlich?','ثواني.':'Sekunden.','ده تقريبًا كل اللي معاك…':'So viel Zeit haben Sie ungefähr…',
+    'قبل ما صباع العميل':'bevor der Daumen des Kunden','يكمّل سكرول.':'weiterscrollt.','كل صفحة لازم تكسب اللي بعدها.':'Jede Seite muss die nächste verdienen.',
+    'الاسم':'Der Name','ورا الحروف دي… رؤية ورسالة وهدف.':'Hinter den Buchstaben stehen Vision, Mission und Ziel.',
+    'رؤية':'Vision','ابتكار':'Innovation','قيمة':'Wert','أثر':'Wirkung','ثقة':'Vertrauen',
+    'إحنا شركة ماركتينج E2E.':'Wir sind eine E2E-Marketingagentur.','الأرقام الأول… عشان وقتك غالي.':'Zuerst die Zahlen. Ihre Zeit zählt.',
+    'حملات شغالة في مصر والسعودية والإمارات — بالعربي والإنجليزي.':'Kampagnen in Ägypten, Saudi-Arabien und den VAE — auf Arabisch und Englisch.',
+    'عميل':'Kunden','في أكتر من':'in mehr als','مجال.':'Branchen.','ملايين':'Millionen','جنيه ميديا اتدارت على إيدينا':'EGP Media-Budget von unserem Team verwaltet',
+    'مشروع اتسلّم':'Projekte geliefert','خدمة ماركتينج E2E':'E2E-Marketingservices','سنين في السوق':'Jahre am Markt','سنين… متوسط بقاء العميل':'Jahre — durchschnittliche Kundenbindung','متابع على حسابنا إحنا':'Follower auf unserem eigenen Account',
+    'جنيه':'EGP','ليد':'Lead','ليدز':'Leads','جنيه متوسط تكلفة الليد':'EGP durchschnittliche Lead-Kosten','جنيه تكلفة الليد':'EGP Kosten pro Lead','جنيه صرف':'EGP Werbeausgaben'
+  },
+  fr:{
+    'جنيه':'EGP','ليد':'lead','ليدز':'leads','عميل محتمل':'prospect','عميل محتمل (ليد)':'prospect (lead)',
+    'جنيه متوسط تكلفة الليد':'EGP coût moyen par lead','جنيه تكلفة الليد':'EGP coût par lead','جنيه صرف':'EGP de dépenses',
+    'ملايين':'Millions','جنيه ميديا اتدارت على إيدينا':'d’EGP de média gérés par notre équipe','عميل':'clients','في أكتر من':'dans plus de','مجال.':'secteurs.',
+    'مشروع اتسلّم':'projets livrés','خدمة ماركتينج E2E':'services marketing E2E','سنين في السوق':'ans sur le marché','سنين… متوسط بقاء العميل':'ans — durée moyenne de collaboration','متابع على حسابنا إحنا':'abonnés sur notre propre compte'
+  },
+  'zh-CN':{
+    'كل براند':'每个品牌','عنده':'都有自己的','حكاية.':'故事。','إحنا اللي بنوصّلها':'我们把它','للعالم.':'带向世界。',
+    'مين':'我们是谁','بنعمل إيه':'我们做什么','ماركتينج':'营销','+ تك هاوس':'+ Tech House','فين':'服务区域','مصر والشرق الأوسط':'埃及和中东',
+    'القاعدة':'规则','يعني إيه VIVIT أصلاً؟':'VIVIT 到底代表什么？','ثواني.':'秒。','ده تقريبًا كل اللي معاك…':'这几乎就是你拥有的全部时间……',
+    'قبل ما صباع العميل':'在客户的手指','يكمّل سكرول.':'继续滑动之前。','كل صفحة لازم تكسب اللي بعدها.':'每一页都必须让人想继续看下一页。',
+    'الاسم':'名字','ورا الحروف دي… رؤية ورسالة وهدف.':'这些字母背后，是愿景、使命和目标。','رؤية':'愿景','ابتكار':'创新','قيمة':'价值','أثر':'影响','ثقة':'信任',
+    'إحنا شركة ماركتينج E2E.':'我们是一家端到端 E2E 营销公司。','الأرقام الأول… عشان وقتك غالي.':'先看数字，因为你的时间很宝贵。',
+    'حملات شغالة في مصر والسعودية والإمارات — بالعربي والإنجليزي.':'我们在埃及、沙特阿拉伯和阿联酋开展阿拉伯语和英语营销活动。',
+    'عميل':'客户','في أكتر من':'覆盖超过','مجال.':'个行业。','ملايين':'数百万','جنيه ميديا اتدارت على إيدينا':'EGP 媒体预算由我们的团队管理',
+    'مشروع اتسلّم':'个已交付项目','خدمة ماركتينج E2E':'项 E2E 营销服务','سنين في السوق':'年市场经验','سنين… متوسط بقاء العميل':'年 — 平均客户合作周期','متابع على حسابنا إحنا':'我们自有账号的粉丝',
+    'جنيه':'EGP','ليد':'潜在客户','ليدز':'潜在客户','جنيه متوسط تكلفة الليد':'EGP 平均获客成本','جنيه تكلفة الليد':'EGP 单个获客成本','جنيه صرف':'EGP 广告支出'
+  },
+  pl:{
+    'كل براند':'Każda marka','عنده':'ma swoją','حكاية.':'historię.','إحنا اللي بنوصّلها':'My niesiemy ją','للعالم.':'w świat.',
+    'مين':'Kim jesteśmy','بنعمل إيه':'Co robimy','ماركتينج':'Marketing','+ تك هاوس':'+ Tech House','فين':'Gdzie','مصر والشرق الأوسط':'Egipt i Bliski Wschód',
+    'القاعدة':'Zasada','يعني إيه VIVIT أصلاً؟':'Co właściwie oznacza VIVIT?','ثواني.':'sekundy.','ده تقريبًا كل اللي معاك…':'Mniej więcej tyle masz czasu…',
+    'قبل ما صباع العميل':'zanim kciuk klienta','يكمّل سكرول.':'przewinie dalej.','كل صفحة لازم تكسب اللي بعدها.':'Każda strona musi zapracować na następną.',
+    'الاسم':'Nazwa','ورا الحروف دي… رؤية ورسالة وهدف.':'Za tymi literami stoją wizja, misja i cel.','رؤية':'Wizja','ابتكار':'Innowacja','قيمة':'Wartość','أثر':'Wpływ','ثقة':'Zaufanie',
+    'إحنا شركة ماركتينج E2E.':'Jesteśmy agencją marketingową E2E.','الأرقام الأول… عشان وقتك غالي.':'Najpierw liczby. Twój czas ma znaczenie.',
+    'حملات شغالة في مصر والسعودية والإمارات — بالعربي والإنجليزي.':'Prowadzimy kampanie w Egipcie, Arabii Saudyjskiej i ZEA — po arabsku i angielsku.',
+    'عميل':'klientów','في أكتر من':'w ponad','مجال.':'branżach.','ملايين':'Miliony','جنيه ميديا اتدارت على إيدينا':'EGP budżetu mediowego zarządzanego przez nasz zespół',
+    'مشروع اتسلّم':'zrealizowanych projektów','خدمة ماركتينج E2E':'usług marketingowych E2E','سنين في السوق':'lat na rynku','سنين… متوسط بقاء العميل':'lata — średni czas współpracy z klientem','متابع على حسابنا إحنا':'obserwujących na naszym koncie',
+    'جنيه':'EGP','ليد':'lead','ليدز':'leady','جنيه متوسط تكلفة الليد':'EGP średni koszt leada','جنيه تكلفة الليد':'EGP koszt leada','جنيه صرف':'EGP wydatków'
+  },
+  sv:{
+    'كل براند':'Varje varumärke','عنده':'har sin','حكاية.':'historia.','إحنا اللي بنوصّلها':'Vi tar den','للعالم.':'ut i världen.',
+    'مين':'Vilka vi är','بنعمل إيه':'Vad vi gör','ماركتينج':'Marknadsföring','+ تك هاوس':'+ Tech House','فين':'Var','مصر والشرق الأوسط':'Egypten och Mellanöstern',
+    'القاعدة':'Regeln','يعني إيه VIVIT أصلاً؟':'Vad betyder VIVIT egentligen?','ثواني.':'sekunder.','ده تقريبًا كل اللي معاك…':'Ungefär så mycket tid har du…',
+    'قبل ما صباع العميل':'innan kundens tumme','يكمّل سكرول.':'scrollar vidare.','كل صفحة لازم تكسب اللي بعدها.':'Varje sida måste förtjäna nästa.',
+    'الاسم':'Namnet','ورا الحروف دي… رؤية ورسالة وهدف.':'Bakom bokstäverna finns vision, mission och mål.','رؤية':'Vision','ابتكار':'Innovation','قيمة':'Värde','أثر':'Effekt','ثقة':'Förtroende',
+    'إحنا شركة ماركتينج E2E.':'Vi är en E2E-marknadsföringsbyrå.','الأرقام الأول… عشان وقتك غالي.':'Siffrorna först. Din tid är värdefull.',
+    'حملات شغالة في مصر والسعودية والإمارات — بالعربي والإنجليزي.':'Kampanjer i Egypten, Saudiarabien och Förenade Arabemiraten — på arabiska och engelska.',
+    'عميل':'kunder','في أكتر من':'i fler än','مجال.':'branscher.','ملايين':'Miljoner','جنيه ميديا اتدارت على إيدينا':'EGP i mediebudget hanterad av vårt team',
+    'مشروع اتسلّم':'levererade projekt','خدمة ماركتينج E2E':'E2E-marknadsföringstjänster','سنين في السوق':'år på marknaden','سنين… متوسط بقاء العميل':'år — genomsnittlig kundrelation','متابع على حسابنا إحنا':'följare på vårt eget konto',
+    'جنيه':'EGP','ليد':'lead','ليدز':'leads','جنيه متوسط تكلفة الليد':'EGP genomsnittlig kostnad per lead','جنيه تكلفة الليد':'EGP kostnad per lead','جنيه صرف':'EGP annonsutgifter'
+  },
+  es:{
+    'كل براند':'Cada marca','عنده':'tiene su','حكاية.':'historia.','إحنا اللي بنوصّلها':'Nosotros la llevamos','للعالم.':'al mundo.',
+    'مين':'Quiénes somos','بنعمل إيه':'Qué hacemos','ماركتينج':'Marketing','+ تك هاوس':'+ Tech House','فين':'Dónde','مصر والشرق الأوسط':'Egipto y Oriente Medio',
+    'القاعدة':'La regla','يعني إيه VIVIT أصلاً؟':'¿Qué significa realmente VIVIT?','ثواني.':'segundos.','ده تقريبًا كل اللي معاك…':'Eso es casi todo el tiempo que tienes…',
+    'قبل ما صباع العميل':'antes de que el pulgar del cliente','يكمّل سكرول.':'siga desplazándose.','كل صفحة لازم تكسب اللي بعدها.':'Cada página debe ganarse la siguiente.',
+    'الاسم':'El nombre','ورا الحروف دي… رؤية ورسالة وهدف.':'Detrás de estas letras hay visión, misión y objetivo.','رؤية':'Visión','ابتكار':'Innovación','قيمة':'Valor','أثر':'Impacto','ثقة':'Confianza',
+    'إحنا شركة ماركتينج E2E.':'Somos una agencia de marketing E2E.','الأرقام الأول… عشان وقتك غالي.':'Primero los números. Tu tiempo importa.',
+    'حملات شغالة في مصر والسعودية والإمارات — بالعربي والإنجليزي.':'Campañas en Egipto, Arabia Saudí y Emiratos — en árabe e inglés.',
+    'عميل':'clientes','في أكتر من':'en más de','مجال.':'sectores.','ملايين':'Millones','جنيه ميديا اتدارت على إيدينا':'EGP en medios gestionados por nuestro equipo',
+    'مشروع اتسلّم':'proyectos entregados','خدمة ماركتينج E2E':'servicios de marketing E2E','سنين في السوق':'años en el mercado','سنين… متوسط بقاء العميل':'años — relación media con clientes','متابع على حسابنا إحنا':'seguidores en nuestra cuenta',
+    'جنيه':'EGP','ليد':'lead','ليدز':'leads','جنيه متوسط تكلفة الليد':'EGP coste medio por lead','جنيه تكلفة الليد':'EGP coste por lead','جنيه صرف':'EGP de inversión'
+  },
+  ru:{
+    'جنيه':'EGP','ليد':'лид','ليدز':'лиды','جنيه متوسط تكلفة الليد':'EGP средняя стоимость лида','جنيه تكلفة الليد':'EGP стоимость лида','جنيه صرف':'EGP рекламных расходов',
+    'حملات شغالة في مصر والسعودية والإمارات — بالعربي والإنجليزي.':'Кампании в Египте, Саудовской Аравии и ОАЭ — на арабском и английском.',
+    'عميل':'клиентов','في أكتر من':'более чем в','مجال.':'отраслях.','ملايين':'Миллионы','جنيه ميديا اتدارت على إيدينا':'EGP медиабюджета под управлением нашей команды',
+    'مشروع اتسلّم':'реализованных проектов','خدمة ماركتينج E2E':'E2E-маркетинговых услуг','سنين في السوق':'лет на рынке','سنين… متوسط بقاء العميل':'года — средний срок сотрудничества','متابع على حسابنا إحنا':'подписчиков в нашем аккаунте'
+  },
+  pt:{
+    'جنيه':'EGP','ليد':'lead','ليدز':'leads','جنيه متوسط تكلفة الليد':'EGP custo médio por lead','جنيه تكلفة الليد':'EGP custo por lead','جنيه صرف':'EGP de investimento',
+    'حملات شغالة في مصر والسعودية والإمارات — بالعربي والإنجليزي.':'Campanhas no Egito, Arábia Saudita e Emirados — em árabe e inglês.',
+    'عميل':'clientes','في أكتر من':'em mais de','مجال.':'setores.','ملايين':'Milhões','جنيه ميديا اتدارت على إيدينا':'EGP em mídia gerida pela nossa equipa',
+    'مشروع اتسلّم':'projetos entregues','خدمة ماركتينج E2E':'serviços de marketing E2E','سنين في السوق':'anos no mercado','سنين… متوسط بقاء العميل':'anos — duração média da relação com clientes','متابع على حسابنا إحنا':'seguidores na nossa conta'
+  }
+};
+
 function translateHtml(html,dict){
   const token=/((?:<script\b[\s\S]*?<\/script>)|(?:<style\b[\s\S]*?<\/style>))/gi;
   const parts=html.split(token);
@@ -407,7 +495,7 @@ for(const tl of TARGETS){
     }
     bs[i].forEach((s,k)=>map[s]=vals[k]||s);
   }
-  Object.assign(map,GLOSSARY[tl]||{},OVERRIDES[tl]||{},SEGMENT_OVERRIDES[tl]||{});
+  Object.assign(map,GLOSSARY[tl]||{},OVERRIDES[tl]||{},SEGMENT_OVERRIDES[tl]||{},REVIEWED_COPY[tl]||{});
   dictionaries[tl]=map;
 }
 
