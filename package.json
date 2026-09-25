@@ -1,0 +1,1 @@
+{"name":"vivit-company-profile","private":true,"type":"module","scripts":{"build":"node scripts/build-i18n.mjs"}}
