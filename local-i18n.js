@@ -40,6 +40,8 @@
   // Backward compatibility for old shared ?lang= links.
   const q=new URLSearchParams(location.search).get('lang');
   if(q && LANGS[q]){
-    history.replaceState(null,'',LANGS[q]);
+    const dest=LANGS[q];
+    if(location.pathname!==dest) location.replace(dest);
+    else history.replaceState(null,'',dest);
   }
 })();
