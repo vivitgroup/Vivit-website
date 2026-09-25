@@ -267,6 +267,87 @@ const GLOSSARY={
   }
 };
 
+const SEGMENT_OVERRIDES={
+  en:{
+    'العربية':'Arabic','لف الموبايل بالعرض عشان تشوف البروفايل أوضح ↻':'Rotate your phone for the best view ↻',
+    'كل براند':'Every brand','عنده':'has a','حكاية.':'story.','إحنا اللي بنوصّلها':'We take it','للعالم.':'to the world.',
+    'مين':'Who we are','بنعمل إيه':'What we do','ماركتينج':'Marketing','+ تك هاوس':'+ Tech House','فين':'Where','مصر والشرق الأوسط':'Egypt & the Middle East',
+    'القاعدة':'The Rule','يعني إيه VIVIT أصلاً؟':'So, what does VIVIT mean?','ثواني.':'seconds.','ده تقريبًا كل اللي معاك…':'That’s almost all the time you get…',
+    'قبل ما صباع العميل':'before your customer’s thumb','يكمّل سكرول.':'keeps scrolling.','لو ما مسكتوش فيهم، كل اللي بعد كده مالوش لازمة. عشان كده البروفايل ده معمول بنفس القاعدة:':'If you don’t stop them there, everything after it is wasted. So this profile follows one rule:',
+    'كل صفحة لازم تكسب اللي بعدها.':'Every page has to earn the next one.','الاسم':'The Name','ورا الحروف دي… رؤية ورسالة وهدف.':'Behind the letters: a vision, a mission, and a goal.',
+    'مش اسم…':'isn’t just a name…','ده وعد من':'It’s a promise in','حروف.':'letters.','اتولد من كلمتين:':'Built from two words:','و':'and','… والحرفين اللي في النص هما اللي بيوصّلوا بينهم.':'…with the middle letters connecting them.',
+    'رؤية':'Vision','بنشوف البراند فين بعد 5 سنين… مش بكرة بس.':'We see where the brand should be in five years — not just tomorrow.',
+    'ابتكار':'Innovation','فكرة جديدة كل مرة — مش نسخة من السوق.':'A fresh idea every time — never a copy of the market.',
+    'قيمة':'Value','كل جنيه بيتصرف معانا… لازم يرجع بأكتر منه.':'Every EGP spent should come back with more value.',
+    'أثر':'Impact','بيتقاس بالمبيعات والسمعة… مش باللايكات.':'Measured in sales and reputation — not likes.',
+    'ثقة':'Trust','عملاءنا بيكمّلوا معانا سنين. ودي أغلى حاجة.':'Clients stay with us for years. That trust matters most.',
+    'رؤيتنا':'Our Vision','طب إحنا مين بالظبط؟':'So, who exactly are we?','إحنا هنا':'Why we’re here','ليه؟':'','تلات جمل بنرجعلها كل ما نيجي ناخد قرار.':'Three statements guide every decision we make.',
+    'نبقى أول اسم ييجي في بال أي براند طموح في مصر والشرق الأوسط… لحظة ما يقرر يكبر.':'To be the first name ambitious brands in Egypt and the Middle East think of when they decide to grow.',
+    'مصر':'Egypt','الخليج':'Gulf','الشرق الأوسط':'Middle East','رسالتنا':'Our Mission',
+    'نمسك البراند من أول فكرة لحد آخر خبر — استراتيجية ذكية، كونتنت يوقّف، وإعلانات بتبيع.':'We take the brand from first idea to final headline — smart strategy, scroll-stopping content, and ads that sell.',
+    'فكرة':'Idea','تنفيذ':'Execution','نتيجة':'Result','هدفنا':'Our Goal',
+    'كل براند يشتغل معانا يطلع بأرقام أحسن من اللي دخل بيها. ده المقياس الوحيد.':'Every brand that works with us should leave with better numbers. That’s the measure.',
+    'مبيعات':'Sales','سمعة':'Reputation','ولاء':'Loyalty','مين إحنا':'Who We Are','الأرقام… في صفحة واحدة.':'The numbers — on one page.',
+    'إحنا شركة':'We are an','الفكرة':'Think','استراتيجية، خطة تسويق، وخطة محتوى':'Strategy, marketing plan, and content plan',
+    'الصنعة':'Make','هوية البراند، تصوير، إنتاج، وسوشيال ميديا':'Brand identity, photography, production, and social media',
+    'الوصول':'Reach','إعلانات، ظهور في جوجل والـ':'Ads, Google and','، إنفلونسرز، و':', influencers, and','الأرض':'On Ground',
+    'أكتيفيشن، بوثات، إيفنتات، وتغطية صحفية':'Activations, booths, events, and press coverage',
+    'التك هاوس':'Tech House','مواقع، تطبيقات،':'Websites, apps,','، ومساعدين':', and assistants','في سطر':'At a Glance','والسوق اللي بنشتغل فيه؟':'And the market we operate in?',
+    'الأرقام الأول…':'Numbers first…','عشان وقتك غالي.':'because your time matters.','عميل':'clients','في أكتر من':'across more than','مجال.':'sectors.',
+    'ملايين':'Millions','جنيه ميديا اتدارت على إيدينا':'of EGP in media managed by our team','مشروع اتسلّم':'projects delivered','خدمة ماركتينج':'marketing services',
+    'سنين في السوق':'years in market','سنين… متوسط بقاء العميل':'years — average client relationship','متابع على حسابنا إحنا':'followers on our own account',
+    'السوق':'The Market'
+  },
+  fr:{
+    'العربية':'Arabe','لف الموبايل بالعرض عشان تشوف البروفايل أوضح ↻':'Tournez votre téléphone pour une meilleure lecture ↻',
+    'كل براند':'Chaque marque','عنده':'a une','حكاية.':'histoire.','إحنا اللي بنوصّلها':'Nous la portons','للعالم.':'au monde.',
+    'مين':'Qui nous sommes','بنعمل إيه':'Ce que nous faisons','ماركتينج':'Marketing','+ تك هاوس':'+ Tech House','فين':'Où','مصر والشرق الأوسط':'Égypte & Moyen-Orient',
+    'القاعدة':'La règle','يعني إيه VIVIT أصلاً؟':'Que signifie vraiment VIVIT ?','ثواني.':'secondes.','ده تقريبًا كل اللي معاك…':'C’est presque tout le temps dont vous disposez…',
+    'قبل ما صباع العميل':'avant que le pouce du client','يكمّل سكرول.':'continue de défiler.','لو ما مسكتوش فيهم، كل اللي بعد كده مالوش لازمة. عشان كده البروفايل ده معمول بنفس القاعدة:':'Si vous ne captez pas son attention là, la suite ne compte plus. Ce profil suit donc une règle simple :',
+    'كل صفحة لازم تكسب اللي بعدها.':'Chaque page doit donner envie de voir la suivante.','الاسم':'Le nom','ورا الحروف دي… رؤية ورسالة وهدف.':'Derrière ces lettres : une vision, une mission et un objectif.',
+    'مش اسم…':'n’est pas qu’un nom…','ده وعد من':'C’est une promesse en','حروف.':'lettres.','اتولد من كلمتين:':'Né de deux mots :','و':'et','… والحرفين اللي في النص هما اللي بيوصّلوا بينهم.':'…avec les lettres centrales qui les relient.',
+    'رؤية':'Vision','بنشوف البراند فين بعد 5 سنين… مش بكرة بس.':'Nous voyons où la marque doit être dans cinq ans — pas seulement demain.',
+    'ابتكار':'Innovation','فكرة جديدة كل مرة — مش نسخة من السوق.':'Une idée nouvelle à chaque fois — jamais une copie du marché.',
+    'قيمة':'Valeur','كل جنيه بيتصرف معانا… لازم يرجع بأكتر منه.':'Chaque EGP investi doit générer davantage de valeur.',
+    'أثر':'Impact','بيتقاس بالمبيعات والسمعة… مش باللايكات.':'Il se mesure en ventes et en réputation — pas en likes.',
+    'ثقة':'Confiance','عملاءنا بيكمّلوا معانا سنين. ودي أغلى حاجة.':'Nos clients restent avec nous pendant des années. Cette confiance est essentielle.',
+    'رؤيتنا':'Notre vision','طب إحنا مين بالظبط؟':'Alors, qui sommes-nous exactement ?','إحنا هنا':'Pourquoi nous sommes là','ليه؟':'','تلات جمل بنرجعلها كل ما نيجي ناخد قرار.':'Trois phrases guident chacune de nos décisions.',
+    'نبقى أول اسم ييجي في بال أي براند طموح في مصر والشرق الأوسط… لحظة ما يقرر يكبر.':'Être le premier nom auquel pense une marque ambitieuse en Égypte et au Moyen-Orient lorsqu’elle décide de grandir.',
+    'مصر':'Égypte','الخليج':'Golfe','الشرق الأوسط':'Moyen-Orient','رسالتنا':'Notre mission',
+    'نمسك البراند من أول فكرة لحد آخر خبر — استراتيجية ذكية، كونتنت يوقّف، وإعلانات بتبيع.':'Accompagner la marque de la première idée au dernier article — stratégie intelligente, contenu qui capte et publicité qui vend.',
+    'فكرة':'Idée','تنفيذ':'Exécution','نتيجة':'Résultat','هدفنا':'Notre objectif',
+    'كل براند يشتغل معانا يطلع بأرقام أحسن من اللي دخل بيها. ده المقياس الوحيد.':'Chaque marque qui travaille avec nous doit repartir avec de meilleurs chiffres. C’est notre mesure.',
+    'مبيعات':'Ventes','سمعة':'Réputation','ولاء':'Fidélité','مين إحنا':'Qui sommes-nous','الأرقام… في صفحة واحدة.':'Les chiffres — sur une seule page.',
+    'إحنا شركة':'Nous sommes une agence','الفكرة':'Réflexion','استراتيجية، خطة تسويق، وخطة محتوى':'Stratégie, plan marketing et plan de contenu',
+    'الصنعة':'Création','هوية البراند، تصوير، إنتاج، وسوشيال ميديا':'Identité de marque, photo, production et réseaux sociaux',
+    'الوصول':'Diffusion','إعلانات، ظهور في جوجل والـ':'Publicité, présence Google et','، إنفلونسرز، و':', influenceurs et','الأرض':'Terrain',
+    'أكتيفيشن، بوثات، إيفنتات، وتغطية صحفية':'Activations, stands, événements et couverture presse',
+    'التك هاوس':'Tech House','مواقع، تطبيقات،':'Sites web, applications,','، ومساعدين':', et assistants','في سطر':'En bref','والسوق اللي بنشتغل فيه؟':'Et le marché sur lequel nous opérons ?',
+    'الأرقام الأول…':'Les chiffres d’abord…','عشان وقتك غالي.':'votre temps compte.','عميل':'clients','في أكتر من':'dans plus de','مجال.':'secteurs.',
+    'ملايين':'Millions','جنيه ميديا اتدارت على إيدينا':'d’EGP de média gérés par notre équipe','مشروع اتسلّم':'projets livrés','خدمة ماركتينج':'services marketing',
+    'سنين في السوق':'ans sur le marché','سنين… متوسط بقاء العميل':'ans — durée moyenne de collaboration','متابع على حسابنا إحنا':'abonnés sur notre propre compte',
+    'السوق':'Le marché'
+  },
+  ru:{
+    'كل براند':'У каждого бренда','عنده':'есть своя','حكاية.':'история.','إحنا اللي بنوصّلها':'Мы доносим её','للعالم.':'до мира.',
+    'مين':'Кто мы','بنعمل إيه':'Что мы делаем','فين':'Где','مصر والشرق الأوسط':'Египет и Ближний Восток',
+    'القاعدة':'Правило','يعني إيه VIVIT أصلاً؟':'Что на самом деле означает VIVIT?','ثواني.':'секунды.','ده تقريبًا كل اللي معاك…':'Примерно столько у вас есть…',
+    'قبل ما صباع العميل':'прежде чем палец клиента','يكمّل سكرول.':'продолжит скроллить.','كل صفحة لازم تكسب اللي بعدها.':'Каждая страница должна заслужить следующую.',
+    'الاسم':'Название','ورا الحروف دي… رؤية ورسالة وهدف.':'За этими буквами — видение, миссия и цель.',
+    'رؤية':'Видение','ابتكار':'Инновация','قيمة':'Ценность','أثر':'Влияние','ثقة':'Доверие',
+    'مين إحنا':'Кто мы','الأرقام… في صفحة واحدة.':'Цифры — на одной странице.','في سطر':'Коротко','السوق':'Рынок'
+  },
+  pt:{
+    'كل براند':'Toda marca','عنده':'tem uma','حكاية.':'história.','إحنا اللي بنوصّلها':'Nós a levamos','للعالم.':'ao mundo.',
+    'مين':'Quem somos','بنعمل إيه':'O que fazemos','فين':'Onde','مصر والشرق الأوسط':'Egito e Oriente Médio',
+    'القاعدة':'A regra','يعني إيه VIVIT أصلاً؟':'O que VIVIT realmente significa?','ثواني.':'segundos.','ده تقريبًا كل اللي معاك…':'É praticamente todo o tempo que você tem…',
+    'قبل ما صباع العميل':'antes que o dedo do cliente','يكمّل سكرول.':'continue rolando.','كل صفحة لازم تكسب اللي بعدها.':'Cada página precisa conquistar a próxima.',
+    'الاسم':'O nome','ورا الحروف دي… رؤية ورسالة وهدف.':'Por trás das letras: visão, missão e objetivo.',
+    'رؤية':'Visão','ابتكار':'Inovação','قيمة':'Valor','أثر':'Impacto','ثقة':'Confiança',
+    'مين إحنا':'Quem somos','الأرقام… في صفحة واحدة.':'Os números — em uma página.','في سطر':'Em resumo','السوق':'O mercado'
+  }
+};
+
 function translateHtml(html,dict){
   const token=/((?:<script\b[\s\S]*?<\/script>)|(?:<style\b[\s\S]*?<\/style>))/gi;
   const parts=html.split(token);
@@ -326,7 +407,7 @@ for(const tl of TARGETS){
     }
     bs[i].forEach((s,k)=>map[s]=vals[k]||s);
   }
-  Object.assign(map,GLOSSARY[tl]||{},OVERRIDES[tl]||{});
+  Object.assign(map,GLOSSARY[tl]||{},OVERRIDES[tl]||{},SEGMENT_OVERRIDES[tl]||{});
   dictionaries[tl]=map;
 }
 
