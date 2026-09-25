@@ -436,6 +436,74 @@ const REVIEWED_COPY={
   }
 };
 
+const FINAL_REVIEW={
+  de:{
+    'لو ما مسكتوش فيهم، كل اللي بعد كده مالوش لازمة. عشان كده البروفايل ده معمول بنفس القاعدة:':'Wenn Sie die Aufmerksamkeit dort nicht gewinnen, ist alles danach verloren. Deshalb folgt dieses Profil einer einfachen Regel:',
+    'مش اسم…':'ist nicht nur ein Name…','ده وعد من':'Es ist ein Versprechen in','حروف.':'Buchstaben.','اتولد من كلمتين:':'Entstanden aus zwei Wörtern:','… والحرفين اللي في النص هما اللي بيوصّلوا بينهم.':'…verbunden durch die Buchstaben in der Mitte.',
+    'بنشوف البراند فين بعد 5 سنين… مش بكرة بس.':'Wir denken daran, wo die Marke in fünf Jahren stehen soll — nicht nur morgen.',
+    'فكرة جديدة كل مرة — مش نسخة من السوق.':'Jedes Mal eine neue Idee — keine Kopie des Marktes.',
+    'كل جنيه بيتصرف معانا… لازم يرجع بأكتر منه.':'Jeder investierte EGP soll mehr Wert zurückbringen.',
+    'بيتقاس بالمبيعات والسمعة… مش باللايكات.':'Gemessen an Umsatz und Reputation — nicht an Likes.',
+    'عملاءنا بيكمّلوا معانا سنين. ودي أغلى حاجة.':'Unsere Kunden bleiben jahrelang bei uns. Dieses Vertrauen zählt am meisten.'
+  },
+  'zh-CN':{
+    'لو ما مسكتوش فيهم، كل اللي بعد كده مالوش لازمة. عشان كده البروفايل ده معمول بنفس القاعدة:':'如果不能在这几秒抓住注意力，后面的内容就失去意义。因此，这份公司介绍遵循一个简单原则：',
+    'مش اسم…':'不只是一个名字……','ده وعد من':'而是一份由','حروف.':'个字母组成的承诺。','اتولد من كلمتين:':'源自两个词：','… والحرفين اللي في النص هما اللي بيوصّلوا بينهم.':'……中间的字母把它们连接在一起。',
+    'بنشوف البراند فين بعد 5 سنين… مش بكرة بس.':'我们关注品牌五年后的位置，而不只是明天。',
+    'فكرة جديدة كل مرة — مش نسخة من السوق.':'每一次都是新想法，而不是市场的复制品。',
+    'كل جنيه بيتصرف معانا… لازم يرجع بأكتر منه.':'每一笔 EGP 投入，都应该带来更高价值。',
+    'بيتقاس بالمبيعات والسمعة… مش باللايكات.':'以销售和品牌声誉衡量，而不是点赞数。',
+    'عملاءنا بيكمّلوا معانا سنين. ودي أغلى حاجة.':'客户与我们长期合作，这份信任最珍贵。',
+    'ماركتينج':'营销','+ تك هاوس':'+ Tech House'
+  },
+  pl:{
+    'لو ما مسكتوش فيهم، كل اللي بعد كده مالوش لازمة. عشان كده البروفايل ده معمول بنفس القاعدة:':'Jeśli nie zatrzymasz uwagi w tych kilku sekundach, wszystko później traci znaczenie. Dlatego ten profil opiera się na jednej zasadzie:',
+    'مش اسم…':'to nie tylko nazwa…','ده وعد من':'To obietnica w','حروف.':'literach.','اتولد من كلمتين:':'Powstała z dwóch słów:','… والحرفين اللي في النص هما اللي بيوصّلوا بينهم.':'…a środkowe litery łączą je ze sobą.',
+    'بنشوف البراند فين بعد 5 سنين… مش بكرة بس.':'Patrzymy, gdzie marka powinna być za pięć lat — nie tylko jutro.',
+    'فكرة جديدة كل مرة — مش نسخة من السوق.':'Za każdym razem świeży pomysł — nigdy kopia rynku.',
+    'كل جنيه بيتصرف معانا… لازم يرجع بأكتر منه.':'Każdy wydany EGP powinien wrócić z większą wartością.',
+    'بيتقاس بالمبيعات والسمعة… مش باللايكات.':'Mierzymy sprzedażą i reputacją — nie lajkami.',
+    'عملاءنا بيكمّلوا معانا سنين. ودي أغلى حاجة.':'Klienci zostają z nami na lata. To zaufanie jest najcenniejsze.'
+  },
+  sv:{
+    'لو ما مسكتوش فيهم، كل اللي بعد كده مالوش لازمة. عشان كده البروفايل ده معمول بنفس القاعدة:':'Om du inte fångar uppmärksamheten där spelar resten ingen roll. Därför bygger den här profilen på en enkel regel:',
+    'مش اسم…':'är inte bara ett namn…','ده وعد من':'Det är ett löfte i','حروف.':'bokstäver.','اتولد من كلمتين:':'Skapat av två ord:','… والحرفين اللي في النص هما اللي بيوصّلوا بينهم.':'…med bokstäverna i mitten som binder ihop dem.',
+    'بنشوف البراند فين بعد 5 سنين… مش بكرة بس.':'Vi ser var varumärket ska vara om fem år — inte bara i morgon.',
+    'فكرة جديدة كل مرة — مش نسخة من السوق.':'En ny idé varje gång — aldrig en kopia av marknaden.',
+    'كل جنيه بيتصرف معانا… لازم يرجع بأكتر منه.':'Varje investerad EGP ska ge mer värde tillbaka.',
+    'بيتقاس بالمبيعات والسمعة… مش باللايكات.':'Mäts i försäljning och rykte — inte likes.',
+    'عملاءنا بيكمّلوا معانا سنين. ودي أغلى حاجة.':'Våra kunder stannar i flera år. Det förtroendet betyder mest.'
+  },
+  es:{
+    'لو ما مسكتوش فيهم، كل اللي بعد كده مالوش لازمة. عشان كده البروفايل ده معمول بنفس القاعدة:':'Si no captas la atención ahí, todo lo que viene después pierde valor. Por eso este perfil sigue una regla sencilla:',
+    'مش اسم…':'no es solo un nombre…','ده وعد من':'Es una promesa en','حروف.':'letras.','اتولد من كلمتين:':'Nació de dos palabras:','… والحرفين اللي في النص هما اللي بيوصّلوا بينهم.':'…y las letras del centro las conectan.',
+    'بنشوف البراند فين بعد 5 سنين… مش بكرة بس.':'Vemos dónde debe estar la marca dentro de cinco años — no solo mañana.',
+    'فكرة جديدة كل مرة — مش نسخة من السوق.':'Una idea nueva cada vez — nunca una copia del mercado.',
+    'كل جنيه بيتصرف معانا… لازم يرجع بأكتر منه.':'Cada EGP invertido debe devolver más valor.',
+    'بيتقاس بالمبيعات والسمعة… مش باللايكات.':'Se mide en ventas y reputación — no en likes.',
+    'عملاءنا بيكمّلوا معانا سنين. ودي أغلى حاجة.':'Nuestros clientes siguen con nosotros durante años. Esa confianza es lo más valioso.'
+  },
+  ru:{
+    'لو ما مسكتوش فيهم، كل اللي بعد كده مالوش لازمة. عشان كده البروفايل ده معمول بنفس القاعدة:':'Если вы не захватили внимание в эти секунды, всё дальше теряет смысл. Поэтому этот профиль строится на одном простом правиле:',
+    'مش اسم…':'не просто название…','ده وعد من':'Это обещание в','حروف.':'буквах.','اتولد من كلمتين:':'Оно родилось из двух слов:','… والحرفين اللي في النص هما اللي بيوصّلوا بينهم.':'…а буквы в середине соединяют их.',
+    'بنشوف البراند فين بعد 5 سنين… مش بكرة بس.':'Мы думаем о том, где бренд должен быть через пять лет — не только завтра.',
+    'فكرة جديدة كل مرة — مش نسخة من السوق.':'Каждый раз новая идея — не копия рынка.',
+    'كل جنيه بيتصرف معانا… لازم يرجع بأكتر منه.':'Каждый вложенный EGP должен возвращать больше ценности.',
+    'بيتقاس بالمبيعات والسمعة… مش باللايكات.':'Измеряется продажами и репутацией — не лайками.',
+    'عملاءنا بيكمّلوا معانا سنين. ودي أغلى حاجة.':'Клиенты остаются с нами годами. Это доверие важнее всего.'
+  },
+  pt:{
+    'ماركتينج':'Marketing','+ تك هاوس':'+ Tech House',
+    'لو ما مسكتوش فيهم، كل اللي بعد كده مالوش لازمة. عشان كده البروفايل ده معمول بنفس القاعدة:':'Se não captar a atenção nesses segundos, tudo o que vem depois perde valor. Por isso, este perfil segue uma regra simples:',
+    'مش اسم…':'não é apenas um nome…','ده وعد من':'É uma promessa em','حروف.':'letras.','اتولد من كلمتين:':'Nasceu de duas palavras:','… والحرفين اللي في النص هما اللي بيوصّلوا بينهم.':'…e as letras do meio fazem a ligação entre elas.',
+    'بنشوف البراند فين بعد 5 سنين… مش بكرة بس.':'Pensamos onde a marca deve estar daqui a cinco anos — não apenas amanhã.',
+    'فكرة جديدة كل مرة — مش نسخة من السوق.':'Uma ideia nova de cada vez — nunca uma cópia do mercado.',
+    'كل جنيه بيتصرف معانا… لازم يرجع بأكتر منه.':'Cada EGP investido deve devolver mais valor.',
+    'بيتقاس بالمبيعات والسمعة… مش باللايكات.':'Mede-se em vendas e reputação — não em likes.',
+    'عملاءنا بيكمّلوا معانا سنين. ودي أغلى حاجة.':'Os nossos clientes ficam connosco durante anos. Essa confiança vale mais.'
+  }
+};
+
 function translateHtml(html,dict){
   const token=/((?:<script\b[\s\S]*?<\/script>)|(?:<style\b[\s\S]*?<\/style>))/gi;
   const parts=html.split(token);
@@ -495,7 +563,7 @@ for(const tl of TARGETS){
     }
     bs[i].forEach((s,k)=>map[s]=vals[k]||s);
   }
-  Object.assign(map,GLOSSARY[tl]||{},OVERRIDES[tl]||{},SEGMENT_OVERRIDES[tl]||{},REVIEWED_COPY[tl]||{});
+  Object.assign(map,GLOSSARY[tl]||{},OVERRIDES[tl]||{},SEGMENT_OVERRIDES[tl]||{},REVIEWED_COPY[tl]||{},FINAL_REVIEW[tl]||{});
   dictionaries[tl]=map;
 }
 
