@@ -1,0 +1,83 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://www.vivit-group.com/#organization",
+      "name": "Vivit Group",
+      "url": "https://www.vivit-group.com",
+      "areaServed": {
+        "@type": "Country",
+        "name": "Egypt"
+      },
+      "location": {
+        "@type": "Place",
+        "name": "First 6th of October, Egypt",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 29.974203,
+          "longitude": 30.956344
+        }
+      },
+      "sameAs": [
+        "https://www.linkedin.com/company/vivit-mark/",
+        "https://www.instagram.com/vivit.marketing",
+        "https://www.facebook.com/share/1FTYjYYV3t/?mibextid=wwXIfr"
+      ],
+      "department": [
+        {
+          "@type": "Organization",
+          "name": "Vivit Marketing"
+        },
+        {
+          "@type": "Organization",
+          "name": "Vivit Tech"
+        }
+      ],
+      "knowsAbout": [
+        "Marketing Strategy",
+        "ATL",
+        "BTL",
+        "Trade Marketing",
+        "Retail Activation",
+        "POSM",
+        "Merchandising",
+        "Digital Marketing",
+        "Media Buying",
+        "Social Media Management",
+        "Branding",
+        "Creative Direction",
+        "Content Creation",
+        "Media Production",
+        "Commercial Photography",
+        "Website Development",
+        "Web Applications",
+        "Mobile App Development",
+        "CRM Development",
+        "ERP Development",
+        "Custom Software",
+        "Systems Integration",
+        "Business Dashboards",
+        "E-commerce",
+        "UI/UX",
+        "AI Automation",
+        "AI Agents",
+        "AI Chatbots",
+        "RAG Solutions",
+        "AI for CRM",
+        "AI for ERP",
+        "AI for Marketing",
+        "AI Analytics",
+        "AI Voice Agents",
+        "AI Governance",
+        "AI Integration"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.vivit-group.com/#website",
+      "url": "https://www.vivit-group.com",
+      "name": "Vivit Group"
+    }
+  ]
+}
