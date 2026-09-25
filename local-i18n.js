@@ -11,7 +11,7 @@
     img.dataset.loaded='1';
     img.decoding='async';
     img.loading='eager';
-    img.src='/assets/'+img.dataset.a+'.'+ext;
+    img.src='https://vivitcp-m1gfzp9k2-vivit-s-projects.vercel.app/assets/'+img.dataset.a+'.'+ext;
   }
   function loadImagesIn(root){
     [...root.querySelectorAll('img[data-a]')].forEach(loadImage);
@@ -166,5 +166,7 @@
   }
 
   const start=()=>{if(!initSingleSlideMobile()){desktopLazyImages();document.querySelectorAll('.slide').forEach(fitSlide)}};
-  if(document.fonts&&document.fonts.ready) document.fonts.ready.then(start); else start();
+  // Do not wait for webfonts on mobile: render the first slide immediately.
+  start();
+  if(!mobile && document.fonts&&document.fonts.ready) document.fonts.ready.then(()=>document.querySelectorAll('.slide').forEach(fitSlide));
 })();
