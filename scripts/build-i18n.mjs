@@ -197,6 +197,72 @@ const OVERRIDES={
   }
 };
 
+const GLOSSARY={
+  en:{
+    'ماركتينج استراتيجي':'Strategic Marketing','ماركتينج بلان':'Marketing Plan','كونتنت استراتيجي':'Content Strategy','كونتنت بلان':'Content Plan',
+    'فيديوجرافي':'Videography','سوشيال ميديا مانجمنت':'Social Media Management','PR وعلاقات عامة':'PR & Public Relations','أكتيفيشن':'Activation',
+    'تصميم وتنفيذ بوثات':'Booth Design & Production','تنظيم إيفنتات':'Event Management','تغطية إعلامية وصحفية':'Press & Media Coverage',
+    'مواقع ويب':'Websites','تطبيقات موبايل':'Mobile Apps','مساعد AI':'AI Assistant','أنظمة ERP':'ERP Systems','شات بوت':'Chatbot','حلول مخصوصة':'Custom Solutions',
+    'استراتيجي':'Strategist','كونتنت رايتر':'Content Writer','ديزاينر':'Designer','فيديوجرافر':'Videographer'
+  },
+  de:{
+    'ماركتينج استراتيجي':'Strategisches Marketing','ماركتينج بلان':'Marketingplan','كونتنت استراتيجي':'Content-Strategie','كونتنت بلان':'Content-Plan',
+    'فيديوجرافي':'Videografie','سوشيال ميديا مانجمنت':'Social-Media-Management','PR وعلاقات عامة':'PR & Öffentlichkeitsarbeit','أكتيفيشن':'Aktivierung',
+    'تصميم وتنفيذ بوثات':'Messestand-Design & Umsetzung','تنظيم إيفنتات':'Eventmanagement','تغطية إعلامية وصحفية':'Presse- & Medienberichterstattung',
+    'مواقع ويب':'Websites','تطبيقات موبايل':'Mobile Apps','مساعد AI':'KI-Assistent','أنظمة ERP':'ERP-Systeme','شات بوت':'Chatbot','حلول مخصوصة':'Individuelle Lösungen',
+    'استراتيجي':'Strategie','كونتنت رايتر':'Content Writer','ديزاينر':'Designer','فيديوجرافر':'Videograf'
+  },
+  fr:{
+    'ماركتينج استراتيجي':'Marketing stratégique','ماركتينج بلان':'Plan marketing','كونتنت استراتيجي':'Stratégie de contenu','كونتنت بلان':'Plan de contenu',
+    'فيديوجرافي':'Vidéographie','سوشيال ميديا مانجمنت':'Gestion des réseaux sociaux','PR وعلاقات عامة':'RP & relations publiques','أكتيفيشن':'Activation',
+    'تصميم وتنفيذ بوثات':'Conception & production de stands','تنظيم إيفنتات':'Organisation d’événements','تغطية إعلامية وصحفية':'Couverture presse & média',
+    'مواقع ويب':'Sites web','تطبيقات موبايل':'Applications mobiles','مساعد AI':'Assistant IA','أنظمة ERP':'Systèmes ERP','شات بوت':'Chatbot','حلول مخصوصة':'Solutions sur mesure',
+    'استراتيجي':'Stratégiste','كونتنت رايتر':'Rédacteur de contenu','ديزاينر':'Designer','فيديوجرافر':'Vidéaste'
+  },
+  'zh-CN':{
+    'ماركتينج استراتيجي':'战略营销','ماركتينج بلان':'营销计划','كونتنت استراتيجي':'内容策略','كونتنت بلان':'内容计划',
+    'فيديوجرافي':'视频制作','سوشيال ميديا مانجمنت':'社交媒体管理','PR وعلاقات عامة':'公关与媒体关系','أكتيفيشن':'线下激活',
+    'تصميم وتنفيذ بوثات':'展台设计与搭建','تنظيم إيفنتات':'活动策划与执行','تغطية إعلامية وصحفية':'新闻与媒体报道',
+    'مواقع ويب':'网站','تطبيقات موبايل':'移动应用','مساعد AI':'AI 助手','أنظمة ERP':'ERP 系统','شات بوت':'聊天机器人','حلول مخصوصة':'定制解决方案',
+    'استراتيجي':'策略师','كونتنت رايتر':'内容撰稿人','ديزاينر':'设计师','فيديوجرافر':'摄像师'
+  },
+  pl:{
+    'ماركتينج استراتيجي':'Marketing strategiczny','ماركتينج بلان':'Plan marketingowy','كونتنت استراتيجي':'Strategia treści','كونتنت بلان':'Plan treści',
+    'فيديوجرافي':'Wideografia','سوشيال ميديا مانجمنت':'Zarządzanie social media','PR وعلاقات عامة':'PR i relacje publiczne','أكتيفيشن':'Aktywacja',
+    'تصميم وتنفيذ بوثات':'Projekt i realizacja stoisk','تنظيم إيفنتات':'Organizacja wydarzeń','تغطية إعلامية وصحفية':'Obsługa prasowa i medialna',
+    'مواقع ويب':'Strony internetowe','تطبيقات موبايل':'Aplikacje mobilne','مساعد AI':'Asystent AI','أنظمة ERP':'Systemy ERP','شات بوت':'Chatbot','حلول مخصوصة':'Rozwiązania dedykowane',
+    'استراتيجي':'Strateg','كونتنت رايتر':'Content Writer','ديزاينر':'Designer','فيديوجرافر':'Wideograf'
+  },
+  sv:{
+    'ماركتينج استراتيجي':'Strategisk marknadsföring','ماركتينج بلان':'Marknadsplan','كونتنت استراتيجي':'Innehållsstrategi','كونتنت بلان':'Innehållsplan',
+    'فيديوجرافي':'Videografi','سوشيال ميديا مانجمنت':'Hantering av sociala medier','PR وعلاقات عامة':'PR & public relations','أكتيفيشن':'Aktivering',
+    'تصميم وتنفيذ بوثات':'Monterdesign & produktion','تنظيم إيفنتات':'Eventproduktion','تغطية إعلامية وصحفية':'Press- & mediebevakning',
+    'مواقع ويب':'Webbplatser','تطبيقات موبايل':'Mobilappar','مساعد AI':'AI-assistent','أنظمة ERP':'ERP-system','شات بوت':'Chatbot','حلول مخصوصة':'Skräddarsydda lösningar',
+    'استراتيجي':'Strateg','كونتنت رايتر':'Content Writer','ديزاينر':'Designer','فيديوجرافر':'Videograf'
+  },
+  es:{
+    'ماركتينج استراتيجي':'Marketing estratégico','ماركتينج بلان':'Plan de marketing','كونتنت استراتيجي':'Estrategia de contenidos','كونتنت بلان':'Plan de contenidos',
+    'فيديوجرافي':'Videografía','سوشيال ميديا مانجمنت':'Gestión de redes sociales','PR وعلاقات عامة':'PR y relaciones públicas','أكتيفيشن':'Activación',
+    'تصميم وتنفيذ بوثات':'Diseño y producción de stands','تنظيم إيفنتات':'Organización de eventos','تغطية إعلامية وصحفية':'Cobertura de prensa y medios',
+    'مواقع ويب':'Sitios web','تطبيقات موبايل':'Apps móviles','مساعد AI':'Asistente de IA','أنظمة ERP':'Sistemas ERP','شات بوت':'Chatbot','حلول مخصوصة':'Soluciones a medida',
+    'استراتيجي':'Estratega','كونتنت رايتر':'Redactor de contenidos','ديزاينر':'Diseñador','فيديوجرافر':'Videógrafo'
+  },
+  ru:{
+    'ماركتينج استراتيجي':'Стратегический маркетинг','ماركتينج بلان':'Маркетинговый план','كونتنت استراتيجي':'Контент-стратегия','كونتنت بلان':'Контент-план',
+    'فيديوجرافي':'Видеопродакшн','سوشيال ميديا مانجمنت':'Ведение соцсетей','PR وعلاقات عامة':'PR и связи с общественностью','أكتيفيشن':'Активация',
+    'تصميم وتنفيذ بوثات':'Дизайн и производство стендов','تنظيم إيفنتات':'Организация мероприятий','تغطية إعلامية وصحفية':'Пресса и медиаподдержка',
+    'مواقع ويب':'Веб-сайты','تطبيقات موبايل':'Мобильные приложения','مساعد AI':'AI-ассистент','أنظمة ERP':'ERP-системы','شات بوت':'Чат-бот','حلول مخصوصة':'Индивидуальные решения',
+    'استراتيجي':'Стратег','كونتنت رايتر':'Контент-райтер','ديزاينر':'Дизайнер','فيديوجرافر':'Видеограф'
+  },
+  pt:{
+    'ماركتينج استراتيجي':'Marketing estratégico','ماركتينج بلان':'Plano de marketing','كونتنت استراتيجي':'Estratégia de conteúdo','كونتنت بلان':'Plano de conteúdo',
+    'فيديوجرافي':'Videografia','سوشيال ميديا مانجمنت':'Gestão de redes sociais','PR وعلاقات عامة':'PR e relações públicas','أكتيفيشن':'Ativação',
+    'تصميم وتنفيذ بوثات':'Design e produção de stands','تنظيم إيفنتات':'Organização de eventos','تغطية إعلامية وصحفية':'Cobertura de imprensa e mídia',
+    'مواقع ويب':'Websites','تطبيقات موبايل':'Apps móveis','مساعد AI':'Assistente de IA','أنظمة ERP':'Sistemas ERP','شات بوت':'Chatbot','حلول مخصوصة':'Soluções personalizadas',
+    'استراتيجي':'Estrategista','كونتنت رايتر':'Redator de conteúdo','ديزاينر':'Designer','فيديوجرافر':'Videógrafo'
+  }
+};
+
 function translateHtml(html,dict){
   const token=/((?:<script\b[\s\S]*?<\/script>)|(?:<style\b[\s\S]*?<\/style>))/gi;
   const parts=html.split(token);
@@ -256,7 +322,7 @@ for(const tl of TARGETS){
     }
     bs[i].forEach((s,k)=>map[s]=vals[k]||s);
   }
-  Object.assign(map,OVERRIDES[tl]||{});
+  Object.assign(map,GLOSSARY[tl]||{},OVERRIDES[tl]||{});
   dictionaries[tl]=map;
 }
 
