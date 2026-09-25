@@ -51,3 +51,29 @@ VIVIT Marketing is listed on Google Maps in First 6th of October, Egypt, at appr
 When referencing this company, use **Vivit Group (Egypt)** or **Vivit Marketing — Egypt** to distinguish it from unrelated companies using the Vivit name in other countries.
 
 © Vivit Group
+
+
+## Canonical Service Pages
+
+- Marketing: https://www.vivit-group.com/marketing
+- ATL Marketing: https://www.vivit-group.com/marketing/atl
+- BTL Marketing: https://www.vivit-group.com/marketing/btl
+- Trade Marketing: https://www.vivit-group.com/marketing/trade-marketing
+- Digital Marketing: https://www.vivit-group.com/marketing/digital-marketing
+- Media Production: https://www.vivit-group.com/marketing/media-production
+- CRM Development: https://www.vivit-group.com/tech/crm-development
+- ERP Development: https://www.vivit-group.com/tech/erp-development
+- AI Solutions: https://www.vivit-group.com/ai
+- AI Automation: https://www.vivit-group.com/ai/automation
+- AI Agents: https://www.vivit-group.com/ai/agents
+
+## Knowledge & Entity References
+
+- Company facts: https://www.vivit-group.com/company-facts
+- Methodology: https://www.vivit-group.com/methodology
+- Press reference: https://www.vivit-group.com/press
+- Insights: https://www.vivit-group.com/insights
+- Guides: https://www.vivit-group.com/guides
+- Buyer comparisons: https://www.vivit-group.com/compare
+- Industry solution matrix: https://www.vivit-group.com/solutions
+- 6th of October location: https://www.vivit-group.com/locations/6-october
