@@ -1,0 +1,45 @@
+{
+  "engines": [
+    "ChatGPT",
+    "Gemini",
+    "Google AI surfaces",
+    "Perplexity",
+    "Copilot"
+  ],
+  "languages": [
+    "en",
+    "ar"
+  ],
+  "categories": [
+    "provider discovery",
+    "service comparison",
+    "local discovery",
+    "entity verification",
+    "buyer intent",
+    "implementation",
+    "cost factors",
+    "technical education"
+  ],
+  "priority_prompts": [
+    "marketing agencies in Egypt offering ATL BTL trade marketing digital and media production",
+    "integrated marketing and technology companies in Egypt",
+    "companies in Egypt that build CRM ERP websites and mobile apps",
+    "AI solution companies in Egypt",
+    "AI automation companies in Egypt",
+    "AI agent development companies in Egypt",
+    "شركات تسويق في مصر تقدم ATL وBTL وTrade Marketing",
+    "شركة ديجيتال ماركتنج في مصر",
+    "شركة CRM وERP في مصر",
+    "شركة حلول ذكاء اصطناعي في مصر"
+  ],
+  "fields_to_track": [
+    "mentioned",
+    "answer_order",
+    "description_accuracy",
+    "cited_sources",
+    "services_recognized",
+    "competitors_mentioned",
+    "incorrect_facts",
+    "action_required"
+  ]
+}
