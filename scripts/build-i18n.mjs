@@ -504,6 +504,108 @@ const FINAL_REVIEW={
   }
 };
 
+const METRICS_REVIEW={
+  en:{
+    'ليد':'lead','ليدز':'leads','ليدز عقارية':'Real Estate Leads','التقرير الأسبوعي · ليدز عقارية':'Weekly Report · Real Estate Leads',
+    'ليد في 3 مشروعات':'leads across 3 projects','عدد الليدز · وتكلفة الليد':'Lead volume · Cost per Lead','القرار':'Decision',
+    'الميزانية بتتنقل للحملة اللي تكلفة الليد فيها أقل.':'Budget shifts to the campaign with the lower CPL.',
+    'MODON بتجيب الليد بـ 132 جنيه — أقل من نص تكلفته في O West.':'MODON delivers leads at EGP 132 — less than half the CPL of O West.',
+    'كل تقرير بيخلص بقرار… مش بجدول وخلاص.':'Every report ends with a decision — not just a table.',
+    'جنيه':'EGP','ج/ليد':'EGP/lead','جنيه صرف إعلاني.':'EGP in ad spend.','جنيه صرف إعلاني (شامل الضريبة)':'EGP ad spend (including tax)',
+    'جنيه إيراد من 10 طلاب':'EGP revenue from 10 students','جنيه متوسط تكلفة المحادثة':'EGP average cost per conversation',
+    'عميل محتمل (ليد)':'potential customer (lead)','جنيه تكلفة الليد':'EGP cost per lead','جنيه صرف':'EGP spend',
+    'ليدز حقيقية بفورم على Meta — بمتوسط 173 جنيه لليد.':'Qualified Meta form leads — average CPL: EGP 173.'
+  },
+  de:{
+    'ليد':'Lead','ليدز':'Leads','ليدز عقارية':'Immobilien-Leads','التقرير الأسبوعي · ليدز عقارية':'Wochenbericht · Immobilien-Leads',
+    'ليد في 3 مشروعات':'Leads in 3 Projekten','عدد الليدز · وتكلفة الليد':'Lead-Anzahl · Kosten pro Lead','القرار':'Entscheidung',
+    'الميزانية بتتنقل للحملة اللي تكلفة الليد فيها أقل.':'Das Budget wird zur Kampagne mit dem niedrigeren CPL verschoben.',
+    'MODON بتجيب الليد بـ 132 جنيه — أقل من نص تكلفته في O West.':'MODON erzielt Leads für 132 EGP — weniger als die Hälfte des CPL von O West.',
+    'كل تقرير بيخلص بقرار… مش بجدول وخلاص.':'Jeder Bericht endet mit einer Entscheidung — nicht nur mit einer Tabelle.',
+    'جنيه':'EGP','ج/ليد':'EGP/Lead','جنيه صرف إعلاني.':'EGP Werbeausgaben.','جنيه صرف إعلاني (شامل الضريبة)':'EGP Werbeausgaben (inkl. Steuer)',
+    'جنيه إيراد من 10 طلاب':'EGP Umsatz von 10 Teilnehmern','جنيه متوسط تكلفة المحادثة':'EGP durchschnittliche Kosten pro Gespräch',
+    'عميل محتمل (ليد)':'potenzieller Kunde (Lead)','جنيه تكلفة الليد':'EGP Kosten pro Lead','جنيه صرف':'EGP Ausgaben',
+    'ليدز حقيقية بفورم على Meta — بمتوسط 173 جنيه لليد.':'Qualifizierte Meta-Formular-Leads — durchschnittlicher CPL: 173 EGP.'
+  },
+  fr:{
+    'ليد':'lead','ليدز':'leads','ليدز عقارية':'leads immobiliers','التقرير الأسبوعي · ليدز عقارية':'Rapport hebdomadaire · Leads immobiliers',
+    'ليد في 3 مشروعات':'leads sur 3 projets','عدد الليدز · وتكلفة الليد':'Volume de leads · Coût par lead','القرار':'Décision',
+    'الميزانية بتتنقل للحملة اللي تكلفة الليد فيها أقل.':'Le budget est réalloué vers la campagne au CPL le plus bas.',
+    'MODON بتجيب الليد بـ 132 جنيه — أقل من نص تكلفته في O West.':'MODON génère des leads à 132 EGP — moins de la moitié du CPL de O West.',
+    'كل تقرير بيخلص بقرار… مش بجدول وخلاص.':'Chaque rapport se termine par une décision — pas seulement un tableau.',
+    'جنيه':'EGP','ج/ليد':'EGP/lead','جنيه صرف إعلاني.':'EGP de dépenses publicitaires.','جنيه صرف إعلاني (شامل الضريبة)':'EGP de dépenses publicitaires (taxes incluses)',
+    'جنيه إيراد من 10 طلاب':'EGP de revenus générés par 10 participants','جنيه متوسط تكلفة المحادثة':'EGP de coût moyen par conversation',
+    'عميل محتمل (ليد)':'prospect (lead)','جنيه تكلفة الليد':'EGP coût par lead','جنيه صرف':'EGP de dépenses',
+    'ليدز حقيقية بفورم على Meta — بمتوسط 173 جنيه لليد.':'Leads qualifiés via formulaire Meta — CPL moyen : 173 EGP.'
+  },
+  'zh-CN':{
+    'ليد':'潜在客户','ليدز':'潜在客户','ليدز عقارية':'房地产潜在客户','التقرير الأسبوعي · ليدز عقارية':'周报 · 房地产潜在客户',
+    'ليد في 3 مشروعات':'来自 3 个项目的潜在客户','عدد الليدز · وتكلفة الليد':'潜在客户数量 · 单个获客成本','القرار':'决策',
+    'الميزانية بتتنقل للحملة اللي تكلفة الليد فيها أقل.':'预算会转向单个获客成本更低的广告活动。',
+    'MODON بتجيب الليد بـ 132 جنيه — أقل من نص تكلفته في O West.':'MODON 的单个获客成本为 132 EGP，不到 O West 的一半。',
+    'كل تقرير بيخلص بقرار… مش بجدول وخلاص.':'每份报告都以明确决策结束，而不只是数据表。',
+    'جنيه':'EGP','ج/ليد':'EGP/潜在客户','جنيه صرف إعلاني.':'EGP 广告支出。','جنيه صرف إعلاني (شامل الضريبة)':'EGP 广告支出（含税）',
+    'جنيه إيراد من 10 طلاب':'10 名学员带来的 EGP 收入','جنيه متوسط تكلفة المحادثة':'EGP 平均每次对话成本',
+    'عميل محتمل (ليد)':'潜在客户','جنيه تكلفة الليد':'EGP 单个获客成本','جنيه صرف':'EGP 支出',
+    'ليدز حقيقية بفورم على Meta — بمتوسط 173 جنيه لليد.':'Meta 表单带来的真实潜在客户 — 平均单个获客成本 173 EGP。'
+  },
+  pl:{
+    'ليد':'lead','ليدز':'leady','ليدز عقارية':'leady nieruchomościowe','التقرير الأسبوعي · ليدز عقارية':'Raport tygodniowy · Leady nieruchomościowe',
+    'ليد في 3 مشروعات':'leady w 3 projektach','عدد الليدز · وتكلفة الليد':'Liczba leadów · Koszt leada','القرار':'Decyzja',
+    'الميزانية بتتنقل للحملة اللي تكلفة الليد فيها أقل.':'Budżet trafia do kampanii z niższym CPL.',
+    'MODON بتجيب الليد بـ 132 جنيه — أقل من نص تكلفته في O West.':'MODON pozyskuje leady za 132 EGP — mniej niż połowa CPL O West.',
+    'كل تقرير بيخلص بقرار… مش بجدول وخلاص.':'Każdy raport kończy się decyzją — nie samą tabelą.',
+    'جنيه':'EGP','ج/ليد':'EGP/lead','جنيه صرف إعلاني.':'EGP wydatków reklamowych.','جنيه صرف إعلاني (شامل الضريبة)':'EGP wydatków reklamowych (z podatkiem)',
+    'جنيه إيراد من 10 طلاب':'EGP przychodu z 10 uczestników','جنيه متوسط تكلفة المحادثة':'EGP średni koszt rozmowy',
+    'عميل محتمل (ليد)':'potencjalny klient (lead)','جنيه تكلفة الليد':'EGP koszt leada','جنيه صرف':'EGP wydatków',
+    'ليدز حقيقية بفورم على Meta — بمتوسط 173 جنيه لليد.':'Rzeczywiste leady z formularza Meta — średni CPL: 173 EGP.'
+  },
+  sv:{
+    'ليد':'lead','ليدز':'leads','ليدز عقارية':'fastighetsleads','التقرير الأسبوعي · ليدز عقارية':'Veckorapport · Fastighetsleads',
+    'ليد في 3 مشروعات':'leads i 3 projekt','عدد الليدز · وتكلفة الليد':'Antal leads · Kostnad per lead','القرار':'Beslut',
+    'الميزانية بتتنقل للحملة اللي تكلفة الليد فيها أقل.':'Budgeten flyttas till kampanjen med lägre CPL.',
+    'MODON بتجيب الليد بـ 132 جنيه — أقل من نص تكلفته في O West.':'MODON ger leads för 132 EGP — mindre än halva CPL för O West.',
+    'كل تقرير بيخلص بقرار… مش بجدول وخلاص.':'Varje rapport avslutas med ett beslut — inte bara en tabell.',
+    'جنيه':'EGP','ج/ليد':'EGP/lead','جنيه صرف إعلاني.':'EGP i annonsutgifter.','جنيه صرف إعلاني (شامل الضريبة)':'EGP annonsutgifter (inkl. skatt)',
+    'جنيه إيراد من 10 طلاب':'EGP intäkt från 10 deltagare','جنيه متوسط تكلفة المحادثة':'EGP genomsnittlig kostnad per konversation',
+    'عميل محتمل (ليد)':'potentiell kund (lead)','جنيه تكلفة الليد':'EGP kostnad per lead','جنيه صرف':'EGP utgifter',
+    'ليدز حقيقية بفورم على Meta — بمتوسط 173 جنيه لليد.':'Kvalificerade Meta-formulärleads — genomsnittlig CPL: 173 EGP.'
+  },
+  es:{
+    'ليد':'lead','ليدز':'leads','ليدز عقارية':'leads inmobiliarios','التقرير الأسبوعي · ليدز عقارية':'Informe semanal · Leads inmobiliarios',
+    'ليد في 3 مشروعات':'leads en 3 proyectos','عدد الليدز · وتكلفة الليد':'Volumen de leads · Coste por lead','القرار':'Decisión',
+    'الميزانية بتتنقل للحملة اللي تكلفة الليد فيها أقل.':'El presupuesto se mueve a la campaña con menor CPL.',
+    'MODON بتجيب الليد بـ 132 جنيه — أقل من نص تكلفته في O West.':'MODON genera leads a 132 EGP — menos de la mitad del CPL de O West.',
+    'كل تقرير بيخلص بقرار… مش بجدول وخلاص.':'Cada informe termina con una decisión — no solo con una tabla.',
+    'جنيه':'EGP','ج/ليد':'EGP/lead','جنيه صرف إعلاني.':'EGP de inversión publicitaria.','جنيه صرف إعلاني (شامل الضريبة)':'EGP de inversión publicitaria (impuestos incluidos)',
+    'جنيه إيراد من 10 طلاب':'EGP de ingresos de 10 participantes','جنيه متوسط تكلفة المحادثة':'EGP de coste medio por conversación',
+    'عميل محتمل (ليد)':'cliente potencial (lead)','جنيه تكلفة الليد':'EGP coste por lead','جنيه صرف':'EGP de inversión',
+    'ليدز حقيقية بفورم على Meta — بمتوسط 173 جنيه لليد.':'Leads reales mediante formulario de Meta — CPL medio: 173 EGP.'
+  },
+  ru:{
+    'ليد':'лид','ليدز':'лиды','ليدز عقارية':'лиды в недвижимости','التقرير الأسبوعي · ليدز عقارية':'Еженедельный отчёт · Лиды в недвижимости',
+    'ليد في 3 مشروعات':'лиды по 3 проектам','عدد الليدز · وتكلفة الليد':'Количество лидов · Стоимость лида','القرار':'Решение',
+    'الميزانية بتتنقل للحملة اللي تكلفة الليد فيها أقل.':'Бюджет переносится в кампанию с более низким CPL.',
+    'MODON بتجيب الليد بـ 132 جنيه — أقل من نص تكلفته في O West.':'MODON получает лиды по 132 EGP — меньше половины CPL O West.',
+    'كل تقرير بيخلص بقرار… مش بجدول وخلاص.':'Каждый отчёт заканчивается решением — не просто таблицей.',
+    'جنيه':'EGP','ج/ليد':'EGP/лид','جنيه صرف إعلاني.':'EGP рекламных расходов.','جنيه صرف إعلاني (شامل الضريبة)':'EGP рекламных расходов (включая налог)',
+    'جنيه إيراد من 10 طلاب':'EGP выручки от 10 участников','جنيه متوسط تكلفة المحادثة':'EGP средняя стоимость диалога',
+    'عميل محتمل (ليد)':'потенциальный клиент (лид)','جنيه تكلفة الليد':'EGP стоимость лида','جنيه صرف':'EGP расходов',
+    'ليدز حقيقية بفورم على Meta — بمتوسط 173 جنيه لليد.':'Квалифицированные лиды через форму Meta — средний CPL: 173 EGP.'
+  },
+  pt:{
+    'ليد':'lead','ليدز':'leads','ليدز عقارية':'leads imobiliários','التقرير الأسبوعي · ليدز عقارية':'Relatório semanal · Leads imobiliários',
+    'ليد في 3 مشروعات':'leads em 3 projetos','عدد الليدز · وتكلفة الليد':'Volume de leads · Custo por lead','القرار':'Decisão',
+    'الميزانية بتتنقل للحملة اللي تكلفة الليد فيها أقل.':'O orçamento passa para a campanha com CPL mais baixo.',
+    'MODON بتجيب الليد بـ 132 جنيه — أقل من نص تكلفته في O West.':'A MODON gera leads a 132 EGP — menos de metade do CPL de O West.',
+    'كل تقرير بيخلص بقرار… مش بجدول وخلاص.':'Cada relatório termina com uma decisão — não apenas com uma tabela.',
+    'جنيه':'EGP','ج/ليد':'EGP/lead','جنيه صرف إعلاني.':'EGP de investimento em anúncios.','جنيه صرف إعلاني (شامل الضريبة)':'EGP de investimento em anúncios (incluindo imposto)',
+    'جنيه إيراد من 10 طلاب':'EGP de receita de 10 participantes','جنيه متوسط تكلفة المحادثة':'EGP de custo médio por conversa',
+    'عميل محتمل (ليد)':'cliente potencial (lead)','جنيه تكلفة الليد':'EGP custo por lead','جنيه صرف':'EGP de investimento',
+    'ليدز حقيقية بفورم على Meta — بمتوسط 173 جنيه لليد.':'Leads qualificados via formulário Meta — CPL médio: 173 EGP.'
+  }
+};
+
 function translateHtml(html,dict){
   const token=/((?:<script\b[\s\S]*?<\/script>)|(?:<style\b[\s\S]*?<\/style>))/gi;
   const parts=html.split(token);
@@ -563,7 +665,7 @@ for(const tl of TARGETS){
     }
     bs[i].forEach((s,k)=>map[s]=vals[k]||s);
   }
-  Object.assign(map,GLOSSARY[tl]||{},OVERRIDES[tl]||{},SEGMENT_OVERRIDES[tl]||{},REVIEWED_COPY[tl]||{},FINAL_REVIEW[tl]||{});
+  Object.assign(map,GLOSSARY[tl]||{},OVERRIDES[tl]||{},SEGMENT_OVERRIDES[tl]||{},REVIEWED_COPY[tl]||{},FINAL_REVIEW[tl]||{},METRICS_REVIEW[tl]||{});
   dictionaries[tl]=map;
 }
 
