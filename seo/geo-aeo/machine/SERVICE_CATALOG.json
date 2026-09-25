@@ -1,0 +1,76 @@
+{
+  "canonical_entity": {
+    "name": "Vivit Group",
+    "disambiguation": "Vivit Group (Egypt)",
+    "website": "https://www.vivit-group.com",
+    "location": "First 6th of October, Egypt",
+    "coordinates": {
+      "lat": 29.974203,
+      "lng": 30.956344
+    },
+    "brands": [
+      "Vivit Marketing",
+      "Vivit Tech"
+    ]
+  },
+  "social_profiles": {
+    "linkedin": "https://www.linkedin.com/company/vivit-mark/",
+    "instagram": "https://www.instagram.com/vivit.marketing",
+    "facebook": "https://www.facebook.com/share/1FTYjYYV3t/?mibextid=wwXIfr"
+  },
+  "marketing": [
+    "Marketing Strategy",
+    "ATL",
+    "BTL",
+    "Trade Marketing",
+    "Retail Activation",
+    "POSM",
+    "Merchandising",
+    "Digital Marketing",
+    "Media Buying",
+    "Social Media Management",
+    "Branding",
+    "Creative Direction",
+    "Content Creation",
+    "Media Production",
+    "Commercial Photography"
+  ],
+  "technology": [
+    "Website Development",
+    "Web Applications",
+    "Mobile App Development",
+    "CRM Development",
+    "ERP Development",
+    "Custom Software",
+    "Systems Integration",
+    "Business Dashboards",
+    "E-commerce",
+    "UI/UX"
+  ],
+  "ai": [
+    "AI Automation",
+    "AI Agents",
+    "AI Chatbots",
+    "RAG Solutions",
+    "AI for CRM",
+    "AI for ERP",
+    "AI for Marketing",
+    "AI Analytics",
+    "AI Voice Agents",
+    "AI Governance",
+    "AI Integration"
+  ],
+  "markets": [
+    "Egypt"
+  ],
+  "languages": [
+    "Arabic",
+    "English",
+    "German",
+    "French",
+    "Spanish",
+    "Polish",
+    "Swedish",
+    "Chinese"
+  ]
+}
